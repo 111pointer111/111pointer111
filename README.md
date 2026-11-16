@@ -3,9 +3,13 @@
 </p>
 
 <p align="center">
-  <strong>Building AI tools for learning and everyday workflows.</strong><br />
-  把学习、知识管理和日常工作流里的需求，做成插件、应用和 Agent 工具。
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/intro-static.svg" />
+    <img src="./assets/intro.svg" alt="Building AI tools for learning and everyday workflows." width="460" />
+  </picture>
 </p>
+
+<p align="center">把学习、知识管理和日常工作流里的需求，做成插件、应用和 Agent 工具。</p>
 
 <p align="center">
   <a href="#selected-projects">Projects</a> ·
@@ -14,6 +18,24 @@
 </p>
 
 ## Selected projects
+
+<p align="center">
+  <a href="https://github.com/111pointer111/spider"><img src="https://github-stats-extended.vercel.app/api/pin/?username=111pointer111&amp;repo=spider&amp;bg_color=08120F&amp;title_color=37F5A5&amp;text_color=D9E9E1&amp;icon_color=37F5A5&amp;border_color=254A39&amp;border_radius=12&amp;card_width=360&amp;description_lines_count=3" alt="Spider — Obsidian 分支式 AI 对话与知识图谱" width="360" /></a>
+  <a href="https://github.com/111pointer111/ego-lite-tab-search"><img src="https://github-stats-extended.vercel.app/api/pin/?username=111pointer111&amp;repo=ego-lite-tab-search&amp;bg_color=08120F&amp;title_color=37F5A5&amp;text_color=D9E9E1&amp;icon_color=37F5A5&amp;border_color=254A39&amp;border_radius=12&amp;card_width=360&amp;description_lines_count=3" alt="Ego Tab Search — 跨账号与空间搜索标签页的原生 macOS 工具" width="360" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/111pointer111/awesome-prompts-manager"><img src="https://github-stats-extended.vercel.app/api/pin/?username=111pointer111&amp;repo=awesome-prompts-manager&amp;bg_color=08120F&amp;title_color=37F5A5&amp;text_color=D9E9E1&amp;icon_color=37F5A5&amp;border_color=254A39&amp;border_radius=12&amp;card_width=360&amp;description_lines_count=3" alt="Awesome Prompts Manager — 多业务 AI 提示词管理与接入 Skill" width="360" /></a>
+  <a href="https://github.com/111pointer111/mini-chat"><img src="https://github-stats-extended.vercel.app/api/pin/?username=111pointer111&amp;repo=mini-chat&amp;bg_color=08120F&amp;title_color=37F5A5&amp;text_color=D9E9E1&amp;icon_color=37F5A5&amp;border_color=254A39&amp;border_radius=12&amp;card_width=360&amp;description_lines_count=3" alt="Mini-Chat — 实时聊天、AI 对话、知识库 RAG 与 MCP 集成" width="360" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/111pointer111/claude-marketplace"><img src="https://github-stats-extended.vercel.app/api/pin/?username=111pointer111&amp;repo=claude-marketplace&amp;bg_color=08120F&amp;title_color=37F5A5&amp;text_color=D9E9E1&amp;icon_color=37F5A5&amp;border_color=254A39&amp;border_radius=12&amp;card_width=360&amp;description_lines_count=3" alt="Claude Marketplace — Claude Code 插件、Skills 与苏格拉底式教学工具" width="360" /></a>
+  <a href="https://github.com/111pointer111/moyu_sign"><img src="https://github-stats-extended.vercel.app/api/pin/?username=111pointer111&amp;repo=moyu_sign&amp;bg_color=08120F&amp;title_color=37F5A5&amp;text_color=D9E9E1&amp;icon_color=37F5A5&amp;border_color=254A39&amp;border_radius=12&amp;card_width=360&amp;description_lines_count=3" alt="摸鱼签 — Flutter 趣味应用与桌面小组件" width="360" /></a>
+</p>
+
+<details>
+<summary>项目说明与界面</summary>
 
 ### Spider
 
@@ -60,14 +82,29 @@
 - **Claude Marketplace** — Claude Code 插件与可复用的 Skills，包含苏格拉底式教学工具。[Source](https://github.com/111pointer111/claude-marketplace)
 - **摸鱼签** — 用 Flutter 做的趣味小应用，包含卡片翻转与桌面小组件。[Source](https://github.com/111pointer111/moyu_sign)
 
+</details>
+
 ## Toolbox
+
+<p align="center">
+  <img src="./assets/skills.svg" alt="TypeScript, Python, Swift, Dart, React, Node.js, Flutter, Obsidian" width="440" />
+</p>
+
+<details>
+<summary>技术栈明细</summary>
 
 **Languages** &nbsp; `TypeScript` · `Python` · `Swift` · `Dart`
 
 **Build with** &nbsp; `React` · `Node.js` · `SwiftUI` · `Flutter` · `Obsidian` · `MCP`
 
+</details>
+
 ## Get in touch
 
 欢迎交流 AI 工具、知识管理、Agent 工作流和效率应用。
 
-**[111pointer111@gmail.com](mailto:111pointer111@gmail.com)**
+<p>
+  <a href="mailto:111pointer111@gmail.com"><img src="./assets/contact.svg" alt="Gmail — 111pointer111@gmail.com" /></a>
+</p>
+
+<sub>Visuals powered by <a href="https://github.com/stats-organization/github-stats-extended">GitHub Stats Extended</a> · <a href="https://github.com/DenverCoder1/readme-typing-svg">Typing SVG</a> · <a href="https://github.com/tandpfun/skill-icons">Skill Icons</a> · <a href="./THIRD_PARTY_NOTICES.md">Credits</a></sub>
