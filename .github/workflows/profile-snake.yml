@@ -1,0 +1,64 @@
+name: Update contribution snake
+
+on:
+  schedule:
+    # 03:17 Asia/Shanghai
+    - cron: '17 19 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/profile-snake.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-snake-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Generate animated contribution snake
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          outputs: |
+            profile-snake/github-snake.gif?color_snake=%2337F5A5&color_dots=%2313241C,%23163C2B,%231E6B43,%23279B61,%2335C883&color_background=%2308120F
+
+      - name: Validate animated GIF
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path('profile-snake/github-snake.gif')
+          data = path.read_bytes()
+          assert data[:6] in (b'GIF87a', b'GIF89a')
+          assert len(data) > 1024
+          frame_controls = data.count(b'\x21\xf9\x04')
+          assert frame_controls > 1, 'Expected a multi-frame animation'
+          print(f'Animated contribution GIF, {frame_controls} frame controls, {len(data)} bytes')
+          PY
+
+      - name: Commit updated contribution snake
+        run: |
+          git add profile-snake/github-snake.gif
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo "Contribution snake is up to date"
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -m 'chore(主页): 更新贪吃蛇贡献动画'
+          git push origin HEAD:main
