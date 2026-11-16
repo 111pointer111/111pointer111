@@ -13,6 +13,7 @@
 
 <p align="center">
   <a href="#selected-projects">Projects</a> ·
+  <a href="#contribution-city">Activity</a> ·
   <a href="#toolbox">Toolbox</a> ·
   <a href="mailto:111pointer111@gmail.com">111pointer111@gmail.com</a>
 </p>
@@ -84,6 +85,14 @@
 
 </details>
 
+## Contribution city
+
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-green.svg" alt="111pointer111 的 GitHub 年度贡献图，使用夜景绿色的 3D 城市展示每日贡献" width="100%" />
+</p>
+
+<p align="center"><sub>基于公开可见的 GitHub 贡献数据，每日自动更新。<a href="https://github.com/111pointer111/111pointer111/actions/workflows/profile-3d.yml">生成记录</a></sub></p>
+
 ## Toolbox
 
 <p align="center">
@@ -107,4 +116,4 @@
   <a href="mailto:111pointer111@gmail.com"><img src="./assets/contact.svg" alt="Gmail — 111pointer111@gmail.com" /></a>
 </p>
 
-<sub>Visuals powered by <a href="https://github.com/stats-organization/github-stats-extended">GitHub Stats Extended</a> · <a href="https://github.com/DenverCoder1/readme-typing-svg">Typing SVG</a> · <a href="https://github.com/tandpfun/skill-icons">Skill Icons</a> · <a href="./THIRD_PARTY_NOTICES.md">Credits</a></sub>
+<sub>Visuals powered by <a href="https://github.com/stats-organization/github-stats-extended">GitHub Stats Extended</a> · <a href="https://github.com/DenverCoder1/readme-typing-svg">Typing SVG</a> · <a href="https://github.com/tandpfun/skill-icons">Skill Icons</a> · <a href="https://github.com/yoshi389111/github-profile-3d-contrib">3D Contrib</a> · <a href="./THIRD_PARTY_NOTICES.md">Credits</a></sub>
